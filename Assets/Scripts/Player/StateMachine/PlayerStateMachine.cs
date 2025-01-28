@@ -45,6 +45,7 @@ public class PlayerStateMachine : MonoBehaviour
     //Function to administrate more easily Death state/function
     public void Death()
     {
+        if(currentState != deadState)
         SwitchState(deadState);
     }
 }
